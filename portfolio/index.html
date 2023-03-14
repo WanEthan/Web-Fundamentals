@@ -7,177 +7,130 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ethan Wan's Portfolio</title>
     <link rel="stylesheet" href="/Users/yujenwan/Desktop/Web Fundamentals/fontawesome-free-6.3.0-web/css/all.css">
-
-    <style>
-        div {
-            margin-top: 15px;
-            margin-bottom: 15px;
-        }
-
-        i {
-            font-size: 45px;
-            width: 50px;
-        }
-
-        table,
-        th,
-        td {
-            padding: 10px;
-            border: 2px solid black;
-            border-collapse: collapse;
-        }
-
-        hr {
-            height: 3px;
-            background-color: #000;
-            width: 35%;
-            margin-left: 0%;
-
-        }
-
-        a {
-            color: #000;
-        }
-
-        a:visited {
-            /* change properties of a link when the link has actually been visited by using a pseudo-selector */
-            color: gray;
-        }
-
-        a:hover {
-            /* change properties of a link when the mouse hovers over them by using a pseudo-selector */
-            color: rgb(202, 181, 44);
-        }
-
-        a:active {
-            /* change properties of a link when the link is actually being clicked by using a pseudo-selector */
-            color: burlywood;
-        }
-
-        th,
-        label {
-            font-family: 'Times New Roman', Times, serif;
-            font-weight: bold;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
 
+    <div class="main">
+        <div class="name"> <!-- div element is a block element-->
+            <h1 class="my name">Ethan Wan</h1> <!-- h element is a block element-->
+        </div>
 
-    <div class="name"> <!-- div element is a block element-->
-        <h1 class="my name">Ethan Wan</h1> <!-- h element is a block element-->
+        <hr>
+
+        <div class="selfie">
+            <img src="./images/me.jpeg" alt="a photo of myself" width="200" height="200">
+            <!-- img element is a in-line element-->
+        </div>
+
+        <label><strong>Find More about me:</strong></label>
+
+        <div class="icons">
+            <i class="fa-solid fa-user"></i>
+            <a href="https://github.com/WanEthan"><i class="fa-brands fa-square-github"></i></a>
+            <a href="https://www.linkedin.com/in/wanethan/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="mailto:qwe052061@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+
+        </div>
+        <hr>
+        <div class="table">
+            <h2>Technologies</h2>
+            <table>
+                <tr> <!-- table rows -->
+                    <th>Front-End</th> <!-- table cols-->
+                    <th>Python</th>
+                    <th>JaveSript</th>
+                    <th>Database</th>
+                    <th> Concepts</th>
+                </tr>
+                <tr>
+                    <td>HTML5</td>
+                    <td>Django</td>
+                    <td>Express</td>
+                    <td>MySQL</td>
+                    <td>AJAX</td>
+                </tr>
+                <tr>
+                    <td>CSS3</td>
+                    <td>Flask</td>
+                    <td>Mongoose</td>
+                    <td>MongoDB</td>
+                    <td>OOP</td>
+
+                </tr>
+                <tr>
+                    <td>Bootstrap</td>
+                    <td>Unittest</td>
+                    <td>React</td>
+                    <td></td>
+                    <td>REST</td>
+                </tr>
+            </table>
+
+
+        </div>
+
+        <hr>
+
+        <div>
+            <h2>Social Snakes</h2>
+            <i class="fa-solid fa-code"></i>
+            <p>Air-Database-Projects in Python - <a
+                    href="https://github.com/WanEthan/Air-Database-Projects"><strong>Code</strong></a></p>
+            <p>National Parks - <a href="https://github.com/WanEthan/Air-Database-Projects"><strong>Code</strong></a>
+            </p>
+
+        </div>
+        <hr>
+
+        <div class="form">
+            <h2>Contact Me</h2>
+
+            <form action="/submit-url" method="post">
+                <!-- The action attribute indicates where form data should be sent. For example, <form action="/submit-url"></form> tells the browser that the form data should be sent to the path /submit-url-->
+
+                <div class="name">
+                    <label>Your Name:</label> <!-- label element is a in-line element-->
+                    <input type="text" name="text" required>
+                    <!-- input element is a in-line element-->
+                </div>
+
+                <div class="email">
+                    <label>Your Email Address:</label>
+                    <input type="email" name="email" required>
+                </div>
+
+                <div class="data">
+                    <label>Date:</label>
+                    <input type="date" name="date" required>
+                </div>
+
+                <label>Message:</label>
+
+                <div class="Message">
+                    <textarea name="Message" placeholder="What would you like to say to me?" cols="50"
+                        rows="10"></textarea>
+                </div>
+
+                <div class="opt-in">
+                    <input type="checkbox" name="accept" id="accept">
+                    <label for="accept">Yes, I would like to receive your response.</label>
+                </div>
+
+                <div class="signup">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+
+
+        <footer>
+            <p>No Copyright - <a href="www.linkedin.com/in/ethan-wan">xxxxx.com</a></p>
+        </footer>
+
     </div>
-
-    <hr>
-
-    <div class="selfie">
-        <img src="./images/me.jpeg" alt="a photo of myself" width="200" height="200">
-        <!-- img element is a in-line element-->
-    </div>
-
-    <label><strong>Find More about me:</strong></label>
-
-    <div class="icons">
-        <i class="fa-solid fa-user"></i>
-        <a href="https://github.com/WanEthan"><i class="fa-brands fa-square-github"></i></a>
-        <a href="https://www.linkedin.com/in/wanethan/"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="mailto:qwe052061@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-
-    </div>
-    <hr>
-    <div class="table">
-        <h2>Technologies</h2>
-        <table>
-            <tr> <!-- table rows -->
-                <th>Front-End</th> <!-- table cols-->
-                <th>Python</th>
-                <th>JaveSript</th>
-                <th>Database</th>
-                <th> Concepts</th>
-            </tr>
-            <tr>
-                <td>HTML5</td>
-                <td>Django</td>
-                <td>Express</td>
-                <td>MySQL</td>
-                <td>AJAX</td>
-            </tr>
-            <tr>
-                <td>CSS3</td>
-                <td>Flask</td>
-                <td>Mongoose</td>
-                <td>MongoDB</td>
-                <td>OOP</td>
-
-            </tr>
-            <tr>
-                <td>Bootstrap</td>
-                <td>Unittest</td>
-                <td>React</td>
-                <td></td>
-                <td>REST</td>
-            </tr>
-        </table>
-
-
-    </div>
-
-    <hr>
-
-    <div>
-        <h2>Social Snakes</h2>
-        <i class="fa-solid fa-code"></i>
-        <p>Air-Database-Projects in Python - <a
-                href="https://github.com/WanEthan/Air-Database-Projects"><strong>Code</strong></a></p>
-        <p>National Parks - <a href="https://github.com/WanEthan/Air-Database-Projects"><strong>Code</strong></a> </p>
-
-    </div>
-    <hr>
-
-    <div class="form">
-        <h2>Contact Me</h2>
-
-        <form action="/submit-url" method="post">
-            <!-- The action attribute indicates where form data should be sent. For example, <form action="/submit-url"></form> tells the browser that the form data should be sent to the path /submit-url-->
-
-            <div class="name">
-                <label>Your Name:</label> <!-- label element is a in-line element-->
-                <input type="text" name="text" required>
-                <!-- input element is a in-line element-->
-            </div>
-
-            <div class="email">
-                <label>Your Email Address:</label>
-                <input type="email" name="email" required>
-            </div>
-
-            <div class="data">
-                <label>Date:</label>
-                <input type="date" name="date" required>
-            </div>
-
-            <label>Message:</label>
-
-            <div class="Message">
-                <textarea name="Message" placeholder="What would you like to say to me?" cols="50" rows="10"></textarea>
-            </div>
-
-            <div class="opt-in">
-                <input type="checkbox" name="accept" id="accept">
-                <label for="accept">Yes, I would like to receive your response.</label>
-            </div>
-
-            <div class="signup">
-                <button type="submit">Submit</button>
-            </div>
-        </form>
-    </div>
-
-    <footer>
-        <p>No Copyright - <a href="www.linkedin.com/in/ethan-wan">xxxxx.com</a></p>
-    </footer>
 
 
 </body>

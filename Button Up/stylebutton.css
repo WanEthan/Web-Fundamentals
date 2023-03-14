@@ -1,0 +1,41 @@
+div {
+    margin: 10%;
+}
+
+
+#button1 {
+
+    color: #089367;
+    background-color: whitesmoke;
+    border-radius: 14px;
+    border: 2px solid #089367;;
+    font-size: 15px;
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+#button2 {
+    background-color: #3ae2ad;;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border: none;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+
+}
+
+#button3 {
+    color: white;
+    border: 2px solid black;
+    font-size: 20px;
+    font-family: sans-serif;
+    background-color: rgb(4, 120, 192);
+    box-shadow: 10px 5px 5px darkblue;
+    padding: 14px 40px;
+
+}

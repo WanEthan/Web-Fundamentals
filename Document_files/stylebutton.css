@@ -1,0 +1,33 @@
+
+
+
+#button1 {
+    color: #089367;
+    background-color: whitesmoke;
+    border-radius: 35%;
+    border: 2px solid #089367;;
+    width: 200px;
+    height: 50px;
+
+}
+
+#button2 {
+    background-color: #02bd82;;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border: none;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+
+}
+
+
+#button3 {
+    width: 15%;
+    height: 10%;
+    background-color: lightskyblue;
+    box-shadow: 10px 5px 5px darkblue;
+
+}
