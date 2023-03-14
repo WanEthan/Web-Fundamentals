@@ -1,0 +1,53 @@
+.container {
+    width: 950px;
+    background-color: silver;
+    margin: 0px auto;
+    /* Margin is outside block elements, this means that we use margin to separate a block from things around it */
+    padding: 10px;
+    /* padding is within them, and padding to move a block's content away from its edges. */
+}
+
+.top-nav {
+    height: 150px;
+    background-color: green;
+    margin: 10px;
+
+}
+
+.side-nav {
+    height: 300px;
+    width: 200px;
+    background-color: blue;
+}
+
+.main {
+    height: 400px;
+    width: 700px;
+    background-color: red;
+    padding: 2px;
+}
+
+.sub-content {
+    height: 200px;
+    width: 210px;
+    background-color: yellow;
+    float: left;
+    margin: 8px;
+
+}
+
+#advertisement {
+    height: 120px;
+    width: 660px;
+    background-color: purple;
+    display: inline-block;
+    margin: 10px;
+}
+
+.side-nav,
+.main {
+    /* the inline-block property placed the two divs side by side and the vertical-align property makes the two divs line up at the top  */
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px;
+}
