@@ -1,0 +1,28 @@
+
+h1 {
+    color: white;
+    background-color: black;
+    padding: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+span {
+    color: aqua;
+}
+
+h2 {
+    background-color: rebeccapurple;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-style: italic;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+h3 {
+    background-color: lightskyblue;
+    text-decoration: underline;
+    text-align: right;
+    padding: 10px;
+}
