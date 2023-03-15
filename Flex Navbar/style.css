@@ -4,23 +4,21 @@
     height: 10%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .nav-links {
     display: flex; 
     justify-content: space-between;
-    width: 50%;
+    width: 40%;
 }
 
 h1{
     color: white;
-    margin-left: 50px;
 }
 
 li {
     list-style: none;
-    margin-right: 50px;
 }
 
 a {
