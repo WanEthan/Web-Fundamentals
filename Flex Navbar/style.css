@@ -1,0 +1,57 @@
+.nav {
+    background-color: darkslategrey;
+    width: auto;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-links {
+    display: flex; 
+    justify-content: space-between;
+    width: 50%;
+}
+
+h1{
+    color: white;
+    margin-left: 50px;
+}
+
+li {
+    list-style: none;
+    margin-right: 50px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: white;
+}
+
+a:hover {
+    /* change properties of a link when the mouse hovers over them by using a pseudo-selector */
+    color: rgb(236, 211, 49);
+}
+
+a:active {
+    /* change properties of a link when the link is actually being clicked by using a pseudo-selector */
+    color: rgb(223, 180, 123);
+}
+
+button {
+    color: #089367;
+    background-color: whitesmoke;
+    border: 3px solid #089367;;
+    font-size: 15px;
+    width: auto;
+    font-weight: bold;
+    box-shadow: 2px 3px 2px wheat;
+}
+
+button:hover {
+    /* change properties of a link when the mouse hovers over them by using a pseudo-selector */
+    color: rgb(237, 228, 172);
+}
