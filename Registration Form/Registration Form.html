@@ -6,70 +6,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Form</title>
-    <style type="text/css">
-        div {
-            margin-top: 10px;
-            margin-bottom: 10px;
-            font-family: 'Times New Roman', Times, serif;
-        }
-
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <main>
+    <div class="main">
         <h1>Registration Form</h1>
+        <p>* Indicates a required field</p>
 
         <form action="/submit-url" method="post">
             <!-- The action attribute indicates where form data should be sent. For example, <form action="/submit-url"></form> tells the browser that the form data should be sent to the path /submit-url-->
 
-            <div class="firstname">
-                <label>First Name:*</label>
-                <input type="text" name="text" placeholder="Your first name..." required>
+            <div class="basic-info">
+                <label for="first-name">First Name:*</label>
+                <input id="first-name" name="first-name" type="text" placeholder="Your first name..." required>
+
+                <label for="last-name">Last Name:*</label>
+                <input id="last-name" name="last-name" type="text" placeholder="Your last name..." required>
+
+
+                <label for="email">Email Address:*</label>
+                <input id="email" name="email" type="email" placeholder="Your email..." required>
+
+
+                <label for="password">Password:*</label>
+                <input id="password" name="password" type="password" placeholder="Your password..." required>
+
+                <label for="con-password">Confirm Password:*</label>
+                <input id="con-password" name="con-password" type="password" placeholder="Your password again..."
+                    required>
+
+                <label for="birthday">Birthday:*</label>
+                <input id="birthday" name="birthday" type="date" required>
             </div>
 
-            <div class="lastname">
-                <label>Last Name:*</label>
-                <input type="text" name="text" placeholder="Your last name..." required>
-            </div>
-
-            <div class="email">
-                <label>Email Address:*</label>
-                <input type="email" name="email" placeholder="Your email..." required>
-            </div>
-
-            <div class="password">
-                <label>Password:*</label>
-                <input type="password" name="password" placeholder="Your password..." required>
-            </div>
-
-            <div class="confirmpassword">
-                <label>Confirm Password:*</label>
-                <input type="password" name="confirmpassword" placeholder="Your password again..." required>
-            </div>
-
-            <div class="birthday">
-                <label>Birthday:*</label>
-                <input type="date" name="birthday" required>
-            </div>
-
-            <label>Gender Identity:</label>
             <div class="genderidentity">
-                <label><input id="male" value="male" type="radio" name="gender">Male</label>
-                <label><input id="female" value="female" type="radio" name="gender">Female</label>
-                <label><input id="non-binary" value="non-binary" type="radio" name="gender">Non-binary</label>
-                <label><input id="not to answer" value="not to answer" type="radio" name="gender">I prefer not to
-                    answer</label>
+                <p>Gender Identity:</p>
+                <div class="gender">
+                <label for="male"><input id="male" value="male" type="radio" name="gender">Male</label>
+
+                <label for="female"><input id="female" value="female" type="radio" name="gender">Female</label>
+
+                <label for="non-binary"><input id="non-binary" value="non-binary" type="radio"
+                        name="gender">Non-binary</label>
+                
+
+                <label for="no-answer"><input id="no-answer" value="no-answer" type="radio" name="gender">I prefer not
+                    to answer</label>
+
+                </div>
+
                 <!-- The id attribute is used to identify specific HTML elements. Each id attribute's value must be unique from all other id values for the entire page.-->
                 <!-- The name attribute is used to make it so selecting one radio button automatically deselects the other-->
                 <!-- The type attribute with the values radio or checkbox -->
             </div>
 
-            <label>A brief description about youself:</label>
 
             <div class="introduction">
+                <label for="introduction">A brief description about youself:</label>
                 <textarea name="introduction"
                     placeholder="Please provide a short introduction about you, Thank you!"> </textarea>
+            </div>
+
+            <div>
+                <label for="profile-project">Upload a profile project if any: <input id="profile-project" type="file"
+                        name="file" /></label>
             </div>
 
             <div class="lang">
@@ -93,12 +94,12 @@
             <div class="signup">
                 <button type="submit">Sign Up</button>
             </div>
+            <footer>
+                <p>Thank you for your information!</p>
+                <p>We will contact you after reviewing your form</p>
+            </footer>
+    </div>
 
-    </main>
-
-    <footer>
-        <p>* Indicates a required field</p>
-    </footer>
 </body>
 
 </html>
